@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Admin Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="admin-header">
+        <h1>Doctor Admin Analytics Dashboard</h1>
+        <button onclick="goBack()">Back to Main Dashboard</button>
+    </div>
+
+    <div class="analytics-container">
+        <h2>Comprehensive Patient Analytics</h2>
+        <div class="dashboard-metrics">
+            <p>Total Patients: <span id="total-patients">0</span></p>
+            <p>Average Age: <span id="average-age">0</span></p>
+            <p>Gender Ratio: <span id="gender-ratio">0</span></p>
+            <p>Follow-Up Compliance: <span id="followup-compliance">0%</span></p>
+        </div>
+
+        <div class="charts">
+            <h3>Age Demographics</h3>
+            <canvas id="ageChart" width="400" height="200"></canvas>
+
+            <h3>Gender Distribution</h3>
+            <canvas id="genderChart" width="400" height="200"></canvas>
+
+            <h3>Diagnosis Trends</h3>
+            <canvas id="diagnosisChart" width="400" height="200"></canvas>
+
+            <h3>Medication Trends</h3>
+            <canvas id="medicationChart" width="400" height="200"></canvas>
+
+            <h3>Follow-Up Compliance Over Time</h3>
+            <canvas id="followupChart" width="400" height="200"></canvas>
+        </div>
+
+        <h3>Health Insights and Predictive Analysis</h3>
+        <div id="health-insights">
+            <!-- Dynamic AI-Driven Health Recommendations will be shown here -->
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
